@@ -18,7 +18,16 @@ class Waiter
   end
   
   def meals 
+    Meal.all.select do |meal|
+      meal.waiter == waiter
+    end
+  end
+  
+  def best_tipper
+    Meal.
+    
     
   
-  
 end
+
+
